@@ -41,6 +41,22 @@
 <iframe class="pie" src="pie.html" frameborder="0"></iframe>
 
 <script src="https://www.google.com/recaptcha/enterprise.js?render=6Lek6aIfAAAAALV_AnzYZogBktRZd7jZkWjtNYUE"></script>
+<script type="text/javascript">
+    $( '#btn-validate' ).click(function(){
+      var $captcha = $( '#recaptcha' ),
+          response = grecaptcha.getResponse();
+        if (response.length === 0) {
+        $( '.msg-error').text( "reCAPTCHA is mandatory" );
+        if( !$captcha.hasClass( "error" ) ){
+          $captcha.addClass( "error" );
+        }
+      } else {
+        $( '.msg-error' ).text('');
+        $captcha.removeClass( "error" );
+        alert( 'reCAPTCHA marked' );
+      }
+    })
+    </script>
 </script>
 
 </body>
