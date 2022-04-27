@@ -5,9 +5,21 @@
 <meta charset="UTF-8">
 <link rel="Stylesheet" href =css/style.css type="text/css">
 
+<script async src="https://www.google.com/recaptcha/enterprise.js?render=6Lek6aIfAAAAALV_AnzYZogBktRZd7jZkWjtNYUE?h1=es"></script>
+<script>
+grecaptcha.enterprise.ready(function() {
+    grecaptcha.enterprise.execute('6Lek6aIfAAAAALV_AnzYZogBktRZd7jZkWjtNYUE', {action: 'login'}).then(function(token) {
+       
+    });
+});
+</script>
+
+
 </head>
 <body>
 <iframe class="encabezado" src="encabezado.html" frameborder="0"></iframe>
+<form>
+
 <table id="container">
 
     <tr>
@@ -23,12 +35,14 @@
             <td>
             </td>
         </tr>
-
+        <tr><td colspan="2"><span class="msg-error error"></span>
+        <div id="recaptcha" class="g-recaptcha" data-sitekey="6Lek6aIfAAAAALV_AnzYZogBktRZd7jZkWjtNYUE"></div>
+        </td></tr>
 	<tr><td colspan="2"><h6>Solicita tu usuario y contraseña al administrador del sistema <br>
 		por correo electrónico a: administrador@escueladediseno.edu.mx</h6></td></tr>
 	
 </table>
-
+</form>
 
 <iframe class="pie" src="pie.html" frameborder="0"></iframe>
 
