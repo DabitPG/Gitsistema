@@ -1,16 +1,13 @@
-<html>
+<!doctype html>
+<html lang="es">
 <head>
 
 <title> Login Sistema</title>
 <meta charset="UTF-8">
 <link rel="Stylesheet" href =css/style.css type="text/css">
-<script src="https://www.google.com/recaptcha/enterprise.js?render=6Let6aIfAAAAAKBgc9on0I-miIdlFaZGXdtLPS9N"></script>
-<script>
-grecaptcha.enterprise.ready(function() {
-    grecaptcha.enterprise.execute('6Let6aIfAAAAAKBgc9on0I-miIdlFaZGXdtLPS9N', {action: 'login'}).then(function(token) {
-    });
-});
-</script>
+
+<script async src='https://www.google.com/recaptcha/api.js?h1=es'></script>
+
 
 
 </head>
@@ -39,16 +36,31 @@ grecaptcha.enterprise.ready(function() {
             <td>
             </td>
         </tr>
-	<tr><td colspan="2"><h6>Solicita tu usuario y contraseña al administrador del sistema <br>
+	<tr><td colspan="2"><h6>Solicita al usuario y contraseña al administrador del sistema <br>
 		por correo electrónico a: administrador@escueladediseno.edu.mx</h6></td></tr>
 	
 </table>
 </form>
 
 <iframe class="pie" src="pie.html" frameborder="0"></iframe>
-<script src="https://www.google.com/recaptcha/enterprise.js?render=6Let6aIfAAAAAKBgc9on0I-miIdlFaZGXdtLPS9N"></script>
-
-
+ <!--js-->
+ <script src='https://www.google.com/recaptcha/api.js'></script>
+ <script type="text/javascript">
+    $( '#btn-validate' ).click(function(){
+      var $captcha = $( '#recaptcha' ),
+          response = grecaptcha.getResponse();
+        if (response.length === 0) {
+        $( '.msg-error').text( "reCAPTCHA is mandatory" );
+        if( !$captcha.hasClass( "error" ) ){
+          $captcha.addClass( "error" );
+        }
+      } else {
+        $( '.msg-error' ).text('');
+        $captcha.removeClass( "error" );
+        alert( 'reCAPTCHA marked' );
+      }
+    })
+    </Script>
 
 </body>
 
