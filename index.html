@@ -5,14 +5,6 @@
 <meta charset="UTF-8">
 <link rel="Stylesheet" href =css/style.css type="text/css">
 
-<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lek6aIfAAAAALV_AnzYZogBktRZd7jZkWjtNYUE"></script>
-<script>
-grecaptcha.enterprise.ready(function() {
-    grecaptcha.enterprise.execute('6Lek6aIfAAAAALV_AnzYZogBktRZd7jZkWjtNYUE', {action: 'login'}).then(function(token) {
-       
-    });
-});
-</script>
 
 
 </head>
@@ -29,15 +21,17 @@ grecaptcha.enterprise.ready(function() {
     <tr>
         <td><h2>Contraseña: </h2></td><td><input type="password" pass="contraseña"></td>
         </tr>
-	<tr>
+        <tr><td colspan="2"><span class="msg-error error"></span>
+            <div id="recaptcha" class="g-recaptcha" data-sitekey="6Lek6aIfAAAAALV_AnzYZogBktRZd7jZkWjtNYUE"></div>
+            </td></tr>
+    
+
+        <tr>
 	<td colspan="2"><a class="boton" href="niveluno.html">Iniciar sesión</button></td></tr>
         <tr>
             <td>
             </td>
         </tr>
-        <tr><td colspan="2"><span class="msg-error error"></span>
-        <div id="recaptcha" class="g-recaptcha" data-sitekey="6Lek6aIfAAAAALV_AnzYZogBktRZd7jZkWjtNYUE"></div>
-        </td></tr>
 	<tr><td colspan="2"><h6>Solicita tu usuario y contraseña al administrador del sistema <br>
 		por correo electrónico a: administrador@escueladediseno.edu.mx</h6></td></tr>
 	
@@ -46,6 +40,14 @@ grecaptcha.enterprise.ready(function() {
 
 <iframe class="pie" src="pie.html" frameborder="0"></iframe>
 
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lek6aIfAAAAALV_AnzYZogBktRZd7jZkWjtNYUE"></script>
+<script>
+grecaptcha.enterprise.ready(function() {
+    grecaptcha.enterprise.execute('6Lek6aIfAAAAALV_AnzYZogBktRZd7jZkWjtNYUE', {action: 'login'}).then(function(token) {
+       
+    });
+});
+</script>
 
 </body>
 
