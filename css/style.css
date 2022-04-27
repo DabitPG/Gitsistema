@@ -1,0 +1,191 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: medium;
+    background-color: #2cb0c3;
+    }
+    
+    h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: #ffffff; 
+    font-size: 22px;
+    }
+    
+    h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff; 
+    }
+    h3 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        margin-left: 15px;
+        text-align:left;
+        color: #ffffff; 
+    }
+    h5 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        text-align: left;
+        color: #ffffff;
+        margin-bottom: 0px;
+        margin-top: 15px;
+    }
+    h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    }
+
+    .botonleft{
+        width: 150px;
+        height: 30px;
+        margin-top: 10px;
+        padding-top: 7px;
+        background-color: #7060b5;
+        border-radius: 15px;
+        color: #ffffff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 14px;
+        margin-left: 15px;
+      
+    }
+    .boton {
+    background-color: #7060b5;
+    border: none;
+    color: #ffffff;
+    padding: 8px 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 185px;
+    }
+
+    .botondos {
+        background-color: #a9d083;
+        border: none;
+        color: #ffffff;
+        padding: 8px 8px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        margin-top: 40px;
+        margin-left: 70px;
+        }
+    
+    
+    table{
+        margin: 0 auto;
+        margin-top: 180px;
+        background-color: #9bc2e6;
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 5px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+    }
+
+    .usuarios{
+        float:  left;
+        margin-top: 150px;
+        margin-left: 150px;
+        background-color: #ffffff;
+        padding: 10px;
+        border: 2px solid;
+        border-radius: 5px;
+        -moz-border-radius:5px;
+        -webkit-border-radius:5px;
+        width: 65%;
+        border-collapse: separate;
+        border-spacing: 30px 5px;
+
+    }
+
+    .usuarios th{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #7060b5;
+        text-align: center;
+        font-size:14px;
+
+    }
+
+    .usuarios tr, td{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #7060b5;
+        text-align: left;
+        font-size: 12px;
+
+    }
+
+    .altas{
+        width: 85%;
+        margin: 0px;
+        background-color: #7060b5;
+        border: 0px;
+        margin-left: 50px;
+    }
+
+    #lista1 {
+        width: 740px;
+        margin-right: 150px;
+        background-color: #7060b5;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        float: right;
+    }
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+    }
+    li {
+        float: left;
+        padding-left: 5px;
+        padding-right: 15px;
+    }
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+
+    }
+
+    #altausers{
+        margin-left: 185px;
+        margin-top: 220px;
+        float: left;
+        background-color: #7060b5;
+        width: 60%;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .encabezado {
+        width: 100%;
+        height: 80px;
+    }
+
+    .pie{
+        width: 100%;
+        vertical-align: bottom;
+        margin-top: 9%;
+    }
