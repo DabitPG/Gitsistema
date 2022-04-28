@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+
+<title> Reportes</title>
+<meta charset="UTF-8">
+<link rel="Stylesheet" href =css/style.css type="text/css">
+
+</head>
+<body>
+<iframe class="encabezado" src="encabezado.html" frameborder="0"></iframe>
+
+<h3>Bienvenido usuario: "AQUI NOMBRE DE USUARIO DE LA BASE DE DATOS" <br></h3>
+<div id="cbuscar">
+    <input type="buscar" placeholder="Buscar" class="busca">
+
+</div>
+
+<div id="filtros">
+<select name="Semestre">
+    <option value="semestre" selected>Semestre</option>
+    <option value="primero">I</option>
+    <option value="segundo">II</option>
+    <option value="tercero">III</option>
+    <option value="cuarto">IV</option>
+    <option value="quinto">V</option>
+    <option value="sexto">VI</option>
+    <option value="séptimo">VII</option>
+    <option value="octavo">VIII</option>
+</select>
+
+<select name="genero">
+    <option value="sexo" selected>Género</option>
+    <option value="H">Hombres</option>
+    <option value="M">Mujeres</option>
+</select>
+
+<select name="Edades">
+    <option value="edades" selected>Edad</option>
+    <option value="menos de 18">Menos de 18</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30a34">30 a 34</option>
+    <option value="35a39">35 a 39</option>
+    <option value="40omas">40 o más</option>
+    </select>
+
+    <select name="Situacion">
+        <option value="situacion" selected>Status</option>
+        <option value="inscrito">Inscritos</option>
+        <option value="reinscrito">Reinscritos</option>
+    </select>
+
+    <select name="Materias">
+        <option value="materiarep" selected>Materias</option>
+        <option value="masreprobada">Más reprobada</option>
+        <option value="extraordinarios">Extraordinarios</option>
+    </select>
+
+
+    <select name="Bajas">
+        <option value="bajas" selected>Tipo de Baja</option>
+        <option value="bts">Baja temporal por solicitud</option>
+        <option value="btr">Baja temporal por reglamento</option>
+        <option value="btv">Baja definitiva voluntaria</option>
+        <option value="btr">Baja definitiva por reglamento</option>
+    </select>
+
+    <button>FILTRAR</button>
+
+
+</div>
+<div id="layerizquierdo">
+    <a class="botonleft" href="#">Reportes</button><br>
+    <a class="botonleft" href="#">Usuarios</button>    
+</div>
+    
+
+
+<div id="areatrabajo">
+
+    <h1>aqui irá la tabla que reflejará la información de los filtros</h1>
+    </div>
+
+<div id="utilidades">
+    
+    <button class="imprimir">Graficar</button>
+    <button class="imprimir">Imprimir</button>
+    <button>Descargar</button>
+    </div>
+    
+
+
+</body>
+
+</html>
