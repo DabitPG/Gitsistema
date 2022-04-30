@@ -2,19 +2,28 @@
 <html lang="es">
 <head>
 
-<title> Nivel uno</title>
+<title>Soporte</title>
 <meta charset="UTF-8">
 <link rel="Stylesheet" href =css/style.css type="text/css">
 
 </head>
-<body>
+<body> 
 <iframe class="encabezado" src="encabezado.html" frameborder="0"></iframe>
+
+<?php
+include ("conexion.php");
+$conn=conectar();
+
+echo"Se realizo con exito la conexión a la base de datos";
+
+
+?>
 
 <h3>Bienvenido usuario: "AQUI NOMBRE DE USUARIO DE LA BASE DE DATOS" <br></h3>
 
 
     <a class="botonleft" href="reportes.html">Reportes</button><br>
-    <a class="botonleft" href="#">Usuarios</button>
+    <a class="botonleft" href="usuarios.html">Usuarios</button>
 
 
 
