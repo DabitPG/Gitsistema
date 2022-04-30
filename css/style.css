@@ -114,6 +114,14 @@ body {
 
     }
 
+    #usuarios{
+        width: 200px;
+        margin-left: 620px;
+        height: auto;
+
+    }
+
+
     #areatrabajo {
         width: 950px;
         height: 500px;
@@ -132,7 +140,9 @@ body {
         margin-right: 50px;
     }
 
-
+    .espacio{
+        margin-right: 50px;
+    }
 
 
     .altas{
@@ -193,3 +203,13 @@ body {
         vertical-align: bottom;
         margin-top: 9%;
     }
+
+    .msg-error {
+        color: #2cb0c3;
+      }
+
+    .g-recaptcha.error {
+        border: solid 2px #7060b5;
+        padding: .2em;
+        width: 19em;
+      }
